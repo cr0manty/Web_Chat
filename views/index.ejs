@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/css/style.css'/>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+    <title>Web Chat</title>
+</head>
+<body>
+<div class="container">
+    <br><br>
+    <div class="row">
+        <label for="chat">History</label>
+        <textarea readonly id="chat" cols="80" rows="20" class="form-control"></textarea>
+        <label for="text">Message</label>
+        <div class="container">
+            <div class="row">
+                <input id="username" size="60" class="form-control col order-first" onkeyup=""
+                       placeholder="Enter your username">
+                <input id="text" size="10"  style="margin-left: 20px;" class="form-control col order-first" onkeyup=""
+                       placeholder="Enter your message here">
+                <button class="btn btn-danger col-md-2 ml-3" id="send">
+                    Send
+                </button>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+</body>
+</html>
