@@ -12,13 +12,6 @@ $(document).ready(function () {
         chat.scrollTop = chat.scrollHeight;
     });
 
-    $('#text').keypress(function (e) {
-        var code = e.keyCode || e.which;
-        if (code === 13) {
-            send_message();
-        }
-    });
-
     $('#send').click(function () {
         let text = document.getElementById("text").value;
         let username = document.getElementById("username").value;
