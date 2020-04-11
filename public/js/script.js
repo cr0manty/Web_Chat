@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
     socket.on('message', function (data) {
         var chat = document.getElementById("chat");
-        chat.value += `${data.username}: ${data.msg}`;
+        chat.value += `${data.username}: ${data.msg}\n`;
         chat.scrollTop = chat.scrollHeight;
     });
 
